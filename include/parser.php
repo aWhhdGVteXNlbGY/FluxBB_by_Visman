@@ -222,7 +222,7 @@ function preparse_tags(string $text, array &$errors, bool $is_signature = false)
 	$tags_quotes = array('url', 'email', 'img', 'imgl', 'imgr', 'topic', 'post', 'forum', 'user');
 	// Tags we limit bbcode in
 	$tags_limit_bbcode = array(
-		'*' 	=> array('b', 'i', 'u', 's', 'ins', 'del', 'em', 'color', 'colour', 'url', 'email', 'list', 'img', 'imgl', 'imgr', 'code', 'topic', 'post', 'forum', 'user'),
+		'*' 	=> array('b', 'i', 'u', 's', 'ins', 'del', 'em', 'color', 'colour', 'url', 'email', 'list', 'img', 'imgl', 'imgr', 'code', 'topic', 'post', 'forum', 'user', 'mono'),
 		'list' 	=> array('*'),
 		'url' 	=> array('img', 'imgr', 'imgl'),
 		'email' => array('img', 'imgr', 'imgl'),
