@@ -306,7 +306,7 @@ else if (isset($_POST['preview']))
 							<li><span><a href="help.php#img" onclick="window.open(this.href); return false;"><?php echo $lang_common['img tag'] ?></a> <?php echo ($pun_config['p_message_bbcode'] == '1' && $pun_config['p_message_img_tag'] == '1') ? $lang_common['on'] : $lang_common['off']; ?></span></li>
 							<li><span><a href="help.php#smilies" onclick="window.open(this.href); return false;"><?php echo $lang_common['Smilies'] ?></a> <?php echo ($pun_config['o_smilies'] == '1') ? $lang_common['on'] : $lang_common['off']; ?></span></li>
 						</ul>
-<?php if ($is_admmod): ?>						<label><strong><?php echo $lang_common['Moderator'] ?></strong><br />
+<?php if ($is_admmod): ?>						<label><strong><?php echo $lang_common['Warn'] ?></strong><br />
 						<input class="longinput" type="text" name="warning" size="80" maxlength="5000" tabindex="<?php echo $cur_index++ ?>" value="<?php echo pun_htmlspecialchars(isset($_POST['warning']) ? $_POST['warning'] : $cur_post['warning']) ?>" /><br /></label>
 <?php elseif ($cur_post['warning'] != ''): ?>
 						<div class="postwarn">
